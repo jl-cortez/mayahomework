@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MayaSendMoney</string>
+    <string name="title_home">Home</string>
+    <string name="title_send_money">Send Money</string>
+    <string name="title_transaction_history">Transaction History</string>
+    <string name="title_logout">Logout</string>
+    <string name="amount_format">₱ %s</string>
+    <string name="send_money_success">Send Money Transaction Success</string>
+    <string name="send_money_failed">Transaction has Failed</string>
+    <string name="send_money_amount_empty">Amount field is empty</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="balance_dummy">₱ xxxx.xx</string>
+    <string name="send_money_btn_label">Send Money</string>
+    <string name="transaction_history_btn_label">Transaction History</string>
+    <string name="login_username_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_btn_label">Login</string>
+    <string name="send_money_amount_hint">Amount</string>
+    <string name="send_money_sumbit_btn_label">SUMBIT</string>
+    <string name="transaction_id_dummy">Transaction ID</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.jimleocortez.mayasendmoney.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login"/>
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.jimleocortez.mayasendmoney.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action android:id="@+id/home_to_send_money"
+            app:destination="@id/navigation_send_money"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_send_money"
+        android:name="com.jimleocortez.mayasendmoney.ui.sendmoney.SendMoneyFragment"
+        android:label="@string/title_send_money"
+        tools:layout="@layout/fragment_send_money">
+
+        <argument
+            android:name="accountDetails"
+            app:argType="com.jimleocortez.mayasendmoney.network.model.AccountDetails" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_transaction_history"
+        android:name="com.jimleocortez.mayasendmoney.ui.transactions.TransactionHistoryFragment"
+        android:label="@string/title_transaction_history"
+        tools:layout="@layout/fragment_transaction_history"/>
+
+</navigation>
